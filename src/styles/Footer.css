@@ -1,0 +1,12 @@
+.footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #131921;
+}
+
+.footer > p {
+  color: grey;
+}
