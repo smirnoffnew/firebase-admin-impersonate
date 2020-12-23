@@ -3,8 +3,8 @@ import { auth } from "../../config/firebase";
 import "../../styles/Login.css";
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("test@test.test");
+  const [password, setPassword] = useState("test@test.test");
 
   const signIn = (e) => {
     e.preventDefault();
