@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+.home__container > ul {
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.home__container > p {
+  margin: 10px;
+}
