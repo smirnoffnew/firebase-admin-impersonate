@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useEffect } from "react"
 import { setUsers } from "../../store/actions"
 import { auth } from '../../config/firebase'
@@ -32,5 +33,11 @@ const Home = ({ currentUser, users, dispatch }) => {
     </div>
   )
 }
+
+Home.propTypes = {
+  currentUser: PropTypes.object.isRequired,
+  users: PropTypes.array.isRequired,
+  dispatch: PropTypes.func.isRequired
+};
 
 export default Home

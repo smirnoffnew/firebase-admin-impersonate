@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import List from "../../../components/list"
 import UserItem from "../userItem"
 
@@ -16,6 +17,12 @@ const UserList = ({ users, currentUser, updateUser }) => {
       )}
     />
   )
+}
+
+UserList.propTypes = {
+  users: PropTypes.array.isRequired,
+  currentUser: PropTypes.object.isRequired,
+  updateUser: PropTypes.func.isRequired
 }
 
 export default UserList

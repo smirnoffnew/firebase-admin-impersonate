@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 import { auth } from "../../config/firebase";
 import "../../styles/header.css";
 
@@ -22,5 +22,9 @@ const Header = ({ user }) => {
     </div>
   )
 }
+
+Header.propTypes = {
+  user: PropTypes.object.isRequired
+};
 
 export default Header

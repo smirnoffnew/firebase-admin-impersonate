@@ -18,7 +18,7 @@ function App() {
         dispatch(setUser(authUser.providerData[0]))
       } else {
         // user is not logged in
-        dispatch(setUser(null))
+        dispatch(setUser({}))
       }
     })
   }, [dispatch])
@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <Redirect to={{
-        pathname: user ? '/' : '/login'
+        pathname: Object.keys(user).length === 0 ? '/login' : '/'
       }} />
       <Switch>
         <Route path="/login">

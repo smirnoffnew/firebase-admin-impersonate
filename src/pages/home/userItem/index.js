@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Item from "../../../components/item"
 
 const UserItem = ({ user, currentUser, updateUser }) => {
@@ -14,6 +15,12 @@ const UserItem = ({ user, currentUser, updateUser }) => {
       {user?.email}
     </Item>
   )
+}
+
+UserItem.propTypes = {
+  user: PropTypes.object.isRequired,
+  currentUser: PropTypes.object.isRequired,
+  updateUser: PropTypes.func.isRequired
 }
 
 export default UserItem
