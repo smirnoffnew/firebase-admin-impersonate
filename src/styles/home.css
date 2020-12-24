@@ -30,7 +30,6 @@
   padding: 10px 20px 10px 20px;
   font-size: 90%;
   color: #666;
-  animation: fadeIn 1s;
   line-height: 25px;
   cursor: pointer;
 }
@@ -38,4 +37,14 @@
 .list ul li.selected {
   background: #53bf53;
   color: #fff;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
