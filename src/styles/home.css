@@ -34,6 +34,10 @@
   cursor: pointer;
 }
 
+.list ul li:hover {
+  background: #b3f8b3;
+}
+
 .list ul li.selected {
   background: #53bf53;
   color: #fff;
