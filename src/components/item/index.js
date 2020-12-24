@@ -1,6 +1,6 @@
-const Item = ({ children, ...props }) => {
+const Item = ({ children, selected, ...props }) => {
   return (
-    <li {...props}>
+    <li {...props} className={selected ? 'selected' : ''}>
       {children}
     </li>
   )

@@ -1,12 +1,12 @@
 const List = ({ children, data, renderItem, title, ...props }) => {
-  return <>
-    <p>{title ?? 'title'}</p>
+  return <div className="list">
+    <h1>{title ?? 'title'}</h1>
     <ul {...props}>
       {data.map((li) => {
         return renderItem(li)
       })}
     </ul>
-  </>
+  </div>
 }
 
 export default List;

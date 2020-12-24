@@ -5,8 +5,12 @@
   flex-direction: column;
   justify-content: center;
   background-color: #131921;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 }
 
-.footer > p {
+.footer p {
   color: grey;
 }
