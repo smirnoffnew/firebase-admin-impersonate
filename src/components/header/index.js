@@ -1,8 +1,8 @@
 import React from "react";
-import { auth } from "../config/firebase";
-import "../styles/Header.css";
+import { auth } from "../../config/firebase";
+import "../../styles/header.css";
 
-function Header({ user }) {
+const Header = ({ user }) => {
   const handleAuth = () => {
     if (user) {
       auth.signOut();

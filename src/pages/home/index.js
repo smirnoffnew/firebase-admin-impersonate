@@ -2,10 +2,10 @@ import { useEffect } from "react"
 import { setUsers } from "../../store/actions"
 import { auth } from '../../config/firebase'
 import API from '../../config/axios'
-import "../../styles/Home.css"
+import UserList from "./userList"
+import "../../styles/home.css"
 
-function Home({ currentUser, users, dispatch }) {
-
+const Home = ({ currentUser, users, dispatch }) => {
   useEffect(() => {
     API.get('users').then(({ data: { users } }) => {
       dispatch(setUsers(users))
@@ -23,18 +23,11 @@ function Home({ currentUser, users, dispatch }) {
   return (
     <div className="home">
       <div className="home__container">
-        <p>list to switch profile</p>
-        <ul>
-          {users.map(user => (
-            <li
-              title={`click to swith account from ${currentUser?.email} to ${user?.email}`}
-              key={user?.uid}
-              onClick={() => updateUser(user?.uid)}
-            >
-              {user?.email}
-            </li>
-          ))}
-        </ul>
+        <UserList
+          users={users}
+          currentUser={currentUser}
+          updateUser={updateUser}
+        />
       </div>
     </div>
   )

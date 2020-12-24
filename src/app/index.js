@@ -3,8 +3,8 @@ import { useStateValue } from "../store/context/StateProvider";
 import React, { useEffect } from "react";
 import { auth } from "../config/firebase";
 import { setUser } from "../store/actions";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import Home from "../pages/home";
 import Login from "../pages/login";
 

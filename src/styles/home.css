@@ -11,6 +11,11 @@
   padding-bottom: 10px;
 }
 
+.home__container > ul > li {
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
 .home__container > p {
   margin: 10px;
 }

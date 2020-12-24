@@ -1,6 +1,6 @@
-import "../styles/Footer.css";
+import "../../styles/footer.css";
 
-function Footer() {
+const Footer = () => {
   return (
     <div className="footer">
       <p>{new Date().getFullYear()}</p>

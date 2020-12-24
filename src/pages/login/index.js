@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { auth } from "../../config/firebase";
-import "../../styles/Login.css";
+import "../../styles/login.css";
 
 function Login() {
   const [email, setEmail] = useState("test@test.test");
