@@ -8,7 +8,6 @@ import { attachCustomCommands } from "cypress-firebase"
 const devConfig = {
   apiKey: Cypress.env('CYPRESS_FIREBASE_API_KEY'),
   authDomain: Cypress.env('CYPRESS_FIREBASE_AUTH_DOMAIN'),
-  databaseURL: Cypress.env('CYPRESS_FIREBASE_DATABASE_URL'),
   projectId: Cypress.env('CYPRESS_FIREBASE_PROJECT_ID'),
   storageBucket: Cypress.env('CYPRESS_FIREBASE_STORAGE_BUCKET'),
   messagingSenderId: Cypress.env('CYPRESS_FIREBASE_MESSAGING_SENDER_ID'),
