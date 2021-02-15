@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     # for testing purposes
-    branches: [ main ]
+    branches: [main]
   pull_request:
     # for testing purposes
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   e2e-tests:
@@ -18,7 +18,7 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
-          start: npm run start
+          start: yarn start
           browser: chrome
           record: true
           wait-on: http://localhost:3001
@@ -46,4 +46,3 @@ jobs:
           CYPRESS_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
           CYPRESS_FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
           CYPRESS_FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
-        
