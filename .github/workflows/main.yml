@@ -21,7 +21,7 @@ jobs:
           start: npm run start
           browser: chrome
           record: true
-          wait-on: http://localhost:5007
+          wait-on: http://localhost:3001
           wait-on-timeout: 120
         env:
           # Branch settings
