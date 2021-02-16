@@ -20,7 +20,6 @@ jobs:
         with:
           start: npm run server, npm run start
           browser: chrome
-          record: true
           wait-on: 'http://localhost:3000'
           wait-on-timeout: 120
         env:
