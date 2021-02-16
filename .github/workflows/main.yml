@@ -1,9 +1,6 @@
 name: CI
 
 on:
-  push:
-    # for testing purposes
-    branches: [main]
   pull_request:
     # for testing purposes
     branches: [main]
@@ -26,4 +23,3 @@ jobs:
           # Branch settings
           GITHUB_HEAD_REF: ${{ github.head_ref }}
           GITHUB_REF: ${{ github.ref }}
-         
