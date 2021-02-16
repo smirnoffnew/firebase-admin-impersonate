@@ -18,10 +18,10 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
-          start: yarn start
+          start: npm run server, npm run start
           browser: chrome
           record: true
-          wait-on: http://localhost:3000
+          wait-on: 'http://localhost:5000, http://localhost:3000'
           wait-on-timeout: 120
         env:
           # Branch settings
