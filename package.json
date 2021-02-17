@@ -47,6 +47,7 @@
     "express": "^4.17.1",
     "firebase-admin": "^9.5.0",
     "firebase-tools": "^9.4.0",
+    "firebase-tools-extra": "^1.0.0",
     "nodemon": "^2.0.6"
   }
 }
