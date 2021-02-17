@@ -3,13 +3,13 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB3ZYZeViWedCfDr24dmmw2V0ADxgFU6fs",
-  authDomain: "hellobeer-32e73.firebaseapp.com",
-  projectId: "hellobeer-32e73",
-  storageBucket: "hellobeer-32e73.appspot.com",
-  messagingSenderId: "445462528668",
-  appId: "1:445462528668:web:56567577a0d6973c51a359",
-  measurementId: "G-VP1X19ENCT"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
