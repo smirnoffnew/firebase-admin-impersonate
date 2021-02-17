@@ -12,7 +12,13 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-
+        
+      - name: Install Dependencies
+        run: npm install firebase-tools
+      - name: Set project
+        run: firebase use hellobeer-32e73 --token $FIREBASE_TOKEN
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
