@@ -28,7 +28,7 @@ jobs:
           SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
           # UID of User to login as during tests
           CYPRESS_TEST_UID: ${{ secrets.TEST_UID }}
-          TEST_UID: ${{ secrets.TEST_UID }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           # rest
           REACT_APP_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
           REACT_APP_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
