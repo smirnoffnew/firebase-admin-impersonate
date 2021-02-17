@@ -17,13 +17,13 @@ jobs:
           browser: chrome
           wait-on: 'http://localhost:3000'
           wait-on-timeout: 120
-          env: true
+          env: CYPRESS_FIREBASE_API_KEY=AIzaSyB3ZYZeViWedCfDr24dmmw2V0ADxgFU6fs, CYPRESS_FIREBASE_AUTH_DOMAIN=hellobeer-32e73.firebaseapp.com, CYPRESS_FIREBASE_PROJECT_ID=hellobeer-32e73, CYPRESS_FIREBASE_STORAGE_BUCKET=hellobeer-32e73.appspot.com, CYPRESS_FIREBASE_MESSAGING_SENDER_ID=445462528668, CYPRESS_FIREBASE_MEASUREMENT_ID=G-VP1X19ENCT, CYPRESS_FIREBASE_APP_ID=1:445462528668:web:56567577a0d6973c51a359,
         env:
           GITHUB_HEAD_REF: ${{ github.head_ref }}
           GITHUB_REF: ${{ github.ref }}
-          SERVICE_ACCOUNT: '{ "type": "service_account", "project_id": "hellobeer-32e73", "private_key_id": "ad07b9757ab1bd2d4e7d8dfc48a50b22c2e816ca", "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9xjLDqGyyB7va\nUSYQvFRdZ886PPB4+SsEBHduvtGxwk6TTqWrxP9HeGz7HPwalD8vzUx2vCBQBk5T\nYnpUfhKCOGKwcJSTbf915XaRk4uuN+h0/A2HueIrmVH0+gj03gjIWnF2UcvvmqoQ\nqiW1kRAfbezfTCziMtMXOe4qJoefRxe1vekzLD6gsHbRSyMEgcLdQGHIyMLNmuC7\n1GBsDr3Nc9nEMufcR6OGgLgyRJgFzgdBf2pCVXNF49uFUQahm8TpkEzSuCYFCqvf\nOBidl7Jb8PeSiloDrzLRrjR5esoZImt0sIiV3FGS5f8VwFEqRPWZ9h9uww/0Uvpv\n9kELw4YNAgMBAAECggEALK93gx5Mz+Plzium/rBV3jOkNlakmhuzzwudMtDQUB7M\ngT+233ow0Ruwb7W8wCZxtXgOPfQg2K8PcO+ClhQkmBCeXmT3+zoeudxY/cDkFlcY\nT7mNFw1EThdZVsmsY7pHj6PKTT3H+0isLGXgIL+CcCAic1b8x5uHnJO5uqedbjm3\nSnMlni5Gfy3z90SffibUedCigrQcAth5sGLJbzhhQNNluC0YdrOZSqvHRsdSo4uI\nNcsp/c+Cfl+VqFH5QfnHFIZyV4oY8Ektiqqaaj8En04zLHUlxUcupA9AQClsmYOA\n09qB9j8PlnOVrHImRT8uUGazQczrks5tYbtM4jTiqQKBgQDxA0xy0qxlMHBgkcH7\noxTmrb3lf7GWx5rfQxcrqoiNt06VG0USA5UCZBq4Uo0FpXG6uYl5kgr/i6NIL96C\nfernqyBaRJCBSExKPCvJGm7nx4DfONf48A+YlECrpZVsydm212ratMYKm+x60bko\nzyy+Pr/JIp74CWV4nKpPibMeOQKBgQDJkzpBtHzvXbAZR8RD2ODnReYsOHU3ciH0\ndbD0LJbyjtiOEeVeTulEF/mhsBrAZJAk6SaFYLmYMDdxUsp3btXJYsJD4krBPlpc\nHYPorbUhL8HI4rfSIQQOMbv6w3yCHjL2wfyccacreN10OTb5+4ZxJtCq73Veup2t\nSVAr9bxmdQKBgQCXtzLdqR7ayAZF1Btfs4ZJvB8pJBv/xYEJgCtK0pwJUdYG6Nav\nA1A+5BMp6tVZM4+HMpqGy9dejGFp5LBWRrujwEaqbDTnHULhDEWn35rnDuBiJF9Y\nFo5KxzB6nM6WX+5MOgjKyjdMoGDZ48GCHgCVddy22bNmgku9BCn1zcHSiQKBgA4i\nD3yZ3gSeagFrwbwMEcDFat0A3F8V1oGgWtbT5YV+NHrJkG5rU/mdQLhwc3+3zU95\nNWU2oeykvM5qQp3bHIwxK3O9AwbHi2hX/W6r9z4rbgfatY67F+Cy5f4wBKPO4D3i\n3gZOBa2LnONQO6WNWCDI2uqRPYZ1ySZkNIXQhfQdAoGBALyiQZptR90J6TMqFN2m\nhEe5fxfHxXGnx6mIDfEunGhrc3+tYBtqZ8UhTliOUS4lE0/vzBGcgW89w/I3vpeS\nz2jqJZWLzDqRvVH9h6hnzqQ7A19XY5AXN960t77GdAGFZ7oit79DbeUe3TCbikmV\nDit25cy6/YTlMqEVknqe+4+i\n-----END PRIVATE KEY-----\n", "client_email": "firebase-adminsdk-2m0fv@hellobeer-32e73.iam.gserviceaccount.com", "client_id": "115665262716116976518", "auth_uri": "https://accounts.google.com/o/oauth2/auth", "token_uri": "https://oauth2.googleapis.com/token", "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs", "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-2m0fv%40hellobeer-32e73.iam.gserviceaccount.com" }'
-          FIREBASE_TOKEN: 1//09zVtdZtpSEgkCgYIARAAGAkSNwF-L9IrfHlzm5nnPzaFbHCBSEiZnzO974xUWz00vvDFSl-XNNxlkeESxSL_cYSOMAR-42a1N7w
-          CYPRESS_TEST_UID: lmeRseZlTDes2Fw2pK9Bj2Dya883
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          SERVICE_ACCOUNT: ${{ secrets.SERVICE_ACCOUNT }}
+          CYPRESS_TEST_UID: ${{ secrets.TEST_UID }}
           REACT_APP_API_KEY: AIzaSyB3ZYZeViWedCfDr24dmmw2V0ADxgFU6fs
           REACT_APP_AUTH_DOMAIN: hellobeer-32e73.firebaseapp.com
           REACT_APP_PROJECT_ID: hellobeer-32e73
@@ -31,10 +31,3 @@ jobs:
           REACT_APP_MESSAGING_SENDER_ID: 445462528668
           REACT_APP_MEASUREMENT_ID: G-VP1X19ENCT
           REACT_APP_APP_ID: 1:445462528668:web:56567577a0d6973c51a359
-          CYPRESS_FIREBASE_API_KEY: AIzaSyB3ZYZeViWedCfDr24dmmw2V0ADxgFU6fs
-          CYPRESS_FIREBASE_AUTH_DOMAIN: hellobeer-32e73.firebaseapp.com
-          CYPRESS_FIREBASE_PROJECT_ID: hellobeer-32e73
-          CYPRESS_FIREBASE_STORAGE_BUCKET: hellobeer-32e73.appspot.com
-          CYPRESS_FIREBASE_MESSAGING_SENDER_ID: 445462528668
-          CYPRESS_FIREBASE_MEASUREMENT_ID: G-VP1X19ENCT
-          CYPRESS_FIREBASE_APP_ID: 1:445462528668:web:56567577a0d6973c51a359
