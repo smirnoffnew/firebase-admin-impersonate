@@ -2,8 +2,13 @@
 
 # dependencies
 /node_modules
+package-lock.json
 /.pnp
 .pnp.js
+yarn.lock
+.env
+.idea/
+.firebase/
 
 # testing
 /coverage
@@ -27,4 +32,3 @@ yarn-error.log*
 
 cypress.env.json
 serviceAccount.json
-
