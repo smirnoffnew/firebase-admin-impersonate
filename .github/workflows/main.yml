@@ -13,8 +13,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         
-      - name: Install Dependencies
-        run: npm install firebase-tools
+      - name: Firebase Deploy
+        run: |
+          sudo npm install -g firebase-tools
+          sudo npm install
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
