@@ -15,7 +15,7 @@ const Header = ({ user }) => {
         <div className="header__option" onClick={handleAuth}>
           <span className="header__option__firstLine">Hello {user?.email}</span>
           <span className="header__option__secondLine">
-            Sign Out
+            Sign Out!
           </span>
         </div>
       </div>
